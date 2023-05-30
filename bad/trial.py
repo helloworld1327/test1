@@ -1,14 +1,3 @@
-from flask import Blueprint, render_template, redirect, request, g, session, make_response, flash
-import libmfa
-import libuser
-import libsession
-
-mod_user = Blueprint('mod_user', __name__, template_folder='templates')
-
-
-@mod_user.route('/login', methods=['GET', 'POST'])
-def do_login():
-
     session.pop('username', None)
 
     if request.method == 'POST':
