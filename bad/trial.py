@@ -1,3 +1,5 @@
+ @mod_user.route('/login', methods=['GET', 'POST'])
+def do_login():
     session.pop('username', None)
 
     if request.method == 'POST':
