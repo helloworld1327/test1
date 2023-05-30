@@ -6,5 +6,5 @@ int fun() {
     return -1;
   }
   // ...
-  return 0; // Noncompliant, file f has not been closed
+  return 0;
 }
